@@ -1,0 +1,35 @@
+.title {
+    font-size: 80px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.subheader {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    color: rgba(255, 255, 255, .5);
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    &_left {
+        padding-left: 104px;
+        &::before {
+            content: '';
+            width: 80px;
+            height: 1px;
+            background-color: rgba(255, 255, 255, .5);
+            position: absolute;
+            left: 0;
+            top: 50%;
+        }
+    }    
+}

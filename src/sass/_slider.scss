@@ -1,0 +1,59 @@
+.slider {
+    &__item {
+        height: 100vh;
+        background: url(../img/bg-header-slider3.png) center center/cover no-repeat;
+        position: relative;
+    }
+    &__info {
+        position: absolute;
+        right: 82px;
+        bottom: 116px;
+        text-align: right;
+    }
+    &__title {
+        margin-top: 20px;
+        margin-bottom: 48px;
+    }
+    &__subheader {
+        margin: 20px 0 25px;
+    }
+    &__arrow {
+        position: absolute;
+        z-index: 3;
+        cursor: pointer;
+        top: 40px;
+        right: 82px;
+        &_left {
+            right: 125px;
+        }
+    }
+}
+.slider-dots {
+    position: absolute;
+    right: 82px;
+    bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    &__box {
+        margin-left: 40px;
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 4px solid #fff;
+    }
+    .slick-current {
+        .slider-dots__box {
+            border-top-color: #4AF6CD;
+        }
+    }
+    &__number {
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 1.5;
+    }
+    &__name {
+        font-size: 16px;
+        font-weight: 300;
+    }
+}

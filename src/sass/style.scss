@@ -1,6 +1,21 @@
-@import 'libs';
-
-
-h1 {
-    color: blue;
+body {
+    font-family: Fira Sans;
+    color: #fff;
 }
+
+a, img {
+    display: inline-block;
+}
+
+@import 'libs';
+@import 'header';
+@import 'titles';
+@import 'slider';
+
+
+
+
+
+
+
+@import 'media';

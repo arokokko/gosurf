@@ -76,9 +76,10 @@ gulp.task('build', gulp.series('clean', 'export'));              /* запуск
 
 
 gulp.task('js', function() {
-    return gulp.src([                                            /* добавляем библиотеки js */
-        'node_modules/slick-carousel/slick/slick.js',   
-        'node_modules/jquery/dist/jquery.js'                   
+    return gulp.src([  
+        'node_modules/jquery/dist/jquery.js',                                          /* добавляем библиотеки js */
+        'node_modules/slick-carousel/slick/slick.js'  
+                           
         // 'node_modules/magnific-popup/dist/jquery.magnific-popup.js'
     ])
         .pipe(concat('libs.min.js'))
