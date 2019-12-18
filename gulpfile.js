@@ -42,7 +42,8 @@ gulp.task('script', function() {
 gulp.task('css', function() {
     return gulp.src([
         'node_modules/normalize.css/normalize.css',                          /*  загружаем библиотеки css */
-        'node_modules/slick-carousel/slick/slick.css',                      
+        'node_modules/slick-carousel/slick/slick.css', 
+        'node_modules/animate.css/animate.css'                     
         // 'node_modules/magnific-popup/dist/magnific-popup.css'
     ])
         .pipe(concat('_libs.scss'))
