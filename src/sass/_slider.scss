@@ -1,6 +1,6 @@
 .slider {
     &__item {
-        height: 100vh;
+        min-height: 100vh;
         background: url(../img/bg-header-slider3.png) center center/cover no-repeat;
         position: relative;
     }
@@ -19,7 +19,7 @@
     }
     &__arrow {
         position: absolute;
-        z-index: 3;
+        z-index: 2;
         cursor: pointer;
         top: 40px;
         right: 82px;

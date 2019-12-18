@@ -1,0 +1,31 @@
+.menu {
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+    &__descr {
+        margin-top: 4px;
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+    &__link {
+        margin-bottom: 30px;
+        transition: all .5s;
+        &:hover {
+            .menu__img {
+                transform: translateY(-2px); 
+            }
+            .menu__descr {
+                transform: translateY(2px); 
+            }         
+        }
+    }
+   
+}

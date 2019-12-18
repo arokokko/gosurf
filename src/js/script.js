@@ -14,3 +14,24 @@ $(function() {
     });
 
 });
+
+function clock() {
+    let d = new Date();
+    let month_num = d.getMonth();
+    let day = d.getDate();
+    
+    month=new Array("01", "02", "03", "04", "05", "06",
+    "07", "08", "09", "10", "11", "12");
+    
+    if (day <= 9) day = "0" + day;
+    
+    date = month[month_num] + " | " + d.getFullYear();
+
+    if (document.layers) {
+     document.layers.doc_time.document.write(day, date);
+     document.layers.doc_time.document.close();
+    }
+    else document.getElementById("doc_day").innerHTML = day;
+        document.getElementById("doc_date").innerHTML = date;
+}
+clock();
