@@ -1,0 +1,17 @@
+.surf {
+    padding-top: 180px;
+    position: relative;
+    h2 {
+        margin: 0;
+    }
+    &__title {
+        position: absolute;
+        top: 147px;
+        left: 245px;
+    }
+    &__echo {
+        opacity: .02;
+        display: inline-block;
+        transform: translateX(-50px);
+    }
+}

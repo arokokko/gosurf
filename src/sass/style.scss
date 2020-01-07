@@ -1,20 +1,10 @@
-body {
-    font-family: Fira Sans;
-    color: #fff;
-}
-
-a, img {
-    display: inline-block;
-}
-
 @import 'libs';
+@import 'general';
 @import 'header';
 @import 'titles';
 @import 'slider';
 @import 'menu';
-
-
-
+@import 'surf';
 
 
 

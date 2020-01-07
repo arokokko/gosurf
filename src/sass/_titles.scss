@@ -1,15 +1,29 @@
 .title {
     font-size: 80px;
     font-weight: 800;
-    text-transform: uppercase;
     line-height: 1;
+}
+
+.title_line {
+    &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: -8px;
+        width: 80px;
+        height: 1px;
+        background-color: #4AF6CD;
+    }
 }
 
 .subheader {
     font-size: 40px;
     font-weight: 800;
     line-height: 1;
-    text-transform: uppercase;
+    span {
+        font-weight: 300;
+        color: rgba(255, 255, 255, .5);
+    }
 }
 
 .subtitle {
@@ -17,7 +31,6 @@
     font-size: 22px;
     font-weight: 400;
     letter-spacing: 7px;
-    text-transform: uppercase;
     position: relative;
     display: inline-block;
     &_left {
@@ -38,7 +51,6 @@
     font-weight: 800;
     font-size: 200px;
     line-height: .78;
-    text-transform: uppercase;
     color: #FFFFFF;
     mix-blend-mode: normal;
     opacity: 0.07;

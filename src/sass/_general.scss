@@ -1,0 +1,26 @@
+html {
+    box-sizing: border-box;
+}
+body {
+    font-family: Fira Sans;
+    color: #fff;
+    background-color: #171919;
+    text-transform: uppercase;
+}
+
+a, img {
+    display: inline-block;
+}
+
+a { 
+    color: #fff;
+}
+
+h1 {
+    margin: 0;
+}
+
+.container {
+    max-width: 1980px;
+    margin: 0 auto;
+}
